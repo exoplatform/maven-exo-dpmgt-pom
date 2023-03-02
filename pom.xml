@@ -4,11 +4,11 @@
   <parent>
     <artifactId>maven-parent-exo-pom</artifactId>
     <groupId>org.exoplatform</groupId>
-    <version>25-SNAPSHOT</version>
+    <version>26-SNAPSHOT</version>
     <relativePath />
   </parent>
   <artifactId>maven-depmgt-exo-pom</artifactId>
-  <version>21.x-exo-SNAPSHOT</version>
+  <version>22.x-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>eXo PLF:: Dependency Management POM</name>
   <description>Provides version of third parties artifacts to use in eXo platform projects</description>
