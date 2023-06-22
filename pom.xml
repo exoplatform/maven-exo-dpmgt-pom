@@ -30,9 +30,9 @@
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
-    <org.exoplatform.social.version>6.5.x-exo-SNAPSHOT</org.exoplatform.social.version>
-    <addon.exo.tasks.version>3.5.x-exo-SNAPSHOT</addon.exo.tasks.version>
-    <addon.exo.notes.version>1.3.x-exo-SNAPSHOT</addon.exo.notes.version>
+    <org.exoplatform.social.version>6.5.0-exo-20230622</org.exoplatform.social.version>
+    <addon.exo.tasks.version>3.5.0-exo-20230622</addon.exo.tasks.version>
+    <addon.exo.notes.version>1.3.0-exo-20230622</addon.exo.notes.version>
 
   </properties>
   <dependencyManagement>
