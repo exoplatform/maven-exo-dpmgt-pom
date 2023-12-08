@@ -8,7 +8,7 @@
     <relativePath />
   </parent>
   <artifactId>maven-exo-depmgt-pom</artifactId>
-  <version>23.x-SNAPSHOT</version>
+  <version>23.x-maintenance-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>eXo PLF:: eXo Platform Dependency Management POM</name>
   <description>Provides version of third parties artifacts to use in eXo platform projects</description>
@@ -27,7 +27,7 @@
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
-    <io.meeds.distribution.version>1.6.x-exo-SNAPSHOT</io.meeds.distribution.version>
+    <io.meeds.distribution.version>1.6.x-maintenance-SNAPSHOT</io.meeds.distribution.version>
 
     <commons-collections4.version>4.4</commons-collections4.version>
     <rome.version>1.18.0</rome.version>
