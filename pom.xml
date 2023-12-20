@@ -23,16 +23,11 @@
     <!-- Jenkins Settings                         -->
     <!-- **************************************** -->
     <jenkins.job.name>maven-exo-depmgt-pom-master-ci</jenkins.job.name>
-    <!-- **************************************** -->
-    <!-- Jira Settings                            -->
-    <!-- **************************************** -->
-    <jira.project.key>DEP</jira.project.key>
+
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
-    <org.exoplatform.social.version>6.6.x-exo-SNAPSHOT</org.exoplatform.social.version>
-    <addon.exo.tasks.version>3.6.x-exo-SNAPSHOT</addon.exo.tasks.version>
-    <addon.exo.notes.version>1.4.x-exo-SNAPSHOT</addon.exo.notes.version>
+    <io.meeds.distribution.version>1.6.x-exo-SNAPSHOT</io.meeds.distribution.version>
 
     <commons-collections4.version>4.4</commons-collections4.version>
     <rome.version>1.18.0</rome.version>
@@ -43,35 +38,22 @@
     <org.apache.pdfbox.version>2.0.24</org.apache.pdfbox.version>
     <org.apache.poi.version>5.2.2</org.apache.poi.version>
     <org.apache.tika.version>1.28.4</org.apache.tika.version>
+    <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
     <org.artofsolving.jodconverter.version>3.0-eXo03</org.artofsolving.jodconverter.version>
     <org.icepdf.version>5.1.1</org.icepdf.version>
     <org.jboss.jboss-commons.version>2.2.22.GA</org.jboss.jboss-commons.version>
-    <org.juzu.version>1.2.0</org.juzu.version>
     <org.powermock.version>2.0.9</org.powermock.version>
     <version.concurrent>1.3.4</version.concurrent>
     <version.htmlparser>2.1</version.htmlparser>
     <version.org.antlr>3.5.2</version.org.antlr>
+    <com.ibm.icu.version>56.1</com.ibm.icu.version>
   </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.exoplatform.social</groupId>
-        <artifactId>social</artifactId>
-        <version>${org.exoplatform.social.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.exoplatform.addons.task</groupId>
-        <artifactId>task-management-parent</artifactId>
-        <version>${addon.exo.tasks.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.exoplatform.addons.notes</groupId>
-        <artifactId>notes</artifactId>
-        <version>${addon.exo.notes.version}</version>
+        <groupId>io.meeds.distribution</groupId>
+        <artifactId>meeds</artifactId>
+        <version>${io.meeds.distribution.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -107,6 +89,11 @@
         <version>${org.apache.jackrabbit.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.apache.jackrabbit</groupId>
+        <artifactId>jackrabbit-jcr-tests</artifactId>
+        <version>${org.apache.jackrabbit.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-core</artifactId>
         <version>${org.apache.lucene.version}</version>
@@ -131,6 +118,11 @@
             <artifactId>log4j-api</artifactId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.ws.commons</groupId>
+        <artifactId>ws-commons-util</artifactId>
+        <version>${org.apache.ws.commons.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tika</groupId>
@@ -211,41 +203,6 @@
         <version>${javax.rmi.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.juzu</groupId>
-        <artifactId>juzu-core</artifactId>
-        <version>${org.juzu.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.juzu</groupId>
-        <artifactId>juzu-plugins-portlet</artifactId>
-        <version>${org.juzu.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.juzu</groupId>
-        <artifactId>juzu-plugins-less</artifactId>
-        <version>${org.juzu.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.juzu</groupId>
-        <artifactId>juzu-plugins-upload</artifactId>
-        <version>${org.juzu.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.juzu</groupId>
-        <artifactId>juzu-plugins-less4j</artifactId>
-        <version>${org.juzu.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.juzu</groupId>
-        <artifactId>juzu-plugins-validation</artifactId>
-        <version>${org.juzu.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.juzu</groupId>
-        <artifactId>juzu-plugins-webjars</artifactId>
-        <version>${org.juzu.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.powermock</groupId>
         <artifactId>powermock-module-junit4</artifactId>
         <version>${org.powermock.version}</version>
@@ -259,6 +216,11 @@
         <groupId>oswego-concurrent</groupId>
         <artifactId>concurrent</artifactId>
         <version>${version.concurrent}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.ibm.icu</groupId>
+        <artifactId>icu4j</artifactId>
+        <version>${com.ibm.icu.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
