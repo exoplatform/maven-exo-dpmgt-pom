@@ -43,7 +43,6 @@
     <org.apache.pdfbox.version>2.0.24</org.apache.pdfbox.version>
     <org.apache.poi.version>5.2.2</org.apache.poi.version>
     <org.apache.tika.version>1.28.4</org.apache.tika.version>
-    <org.artofsolving.jodconverter.version>3.0-eXo03</org.artofsolving.jodconverter.version>
     <org.icepdf.version>5.1.1</org.icepdf.version>
     <org.jboss.jboss-commons.version>2.2.22.GA</org.jboss.jboss-commons.version>
     <org.juzu.version>1.2.0</org.juzu.version>
@@ -179,11 +178,6 @@
             <groupId>com.fasterxml.jackson.core</groupId>
           </exclusion>
         </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.artofsolving.jodconverter</groupId>
-        <artifactId>jodconverter-core</artifactId>
-        <version>${org.artofsolving.jodconverter.version}</version>
       </dependency>
       <dependency>
         <groupId>org.htmlparser</groupId>
