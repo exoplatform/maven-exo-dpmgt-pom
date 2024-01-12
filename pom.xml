@@ -46,6 +46,8 @@
     <version.htmlparser>2.1</version.htmlparser>
     <version.org.antlr>3.5.2</version.org.antlr>
     <com.ibm.icu.version>74.2</com.ibm.icu.version>
+    <commons-lang.version>2.6</commons-lang.version>
+    <org.apache.httpcomponents.httpclient.version>4.5.13</org.apache.httpcomponents.httpclient.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -215,6 +217,16 @@
         <groupId>com.ibm.icu</groupId>
         <artifactId>icu4j</artifactId>
         <version>${com.ibm.icu.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>${commons-lang.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>${org.apache.httpcomponents.httpclient.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
