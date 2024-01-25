@@ -27,7 +27,7 @@
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
-    <io.meeds.distribution.version>1.6.x-exo-SNAPSHOT</io.meeds.distribution.version>
+    <io.meeds.distribution.version>1.6.0-exo-20240125</io.meeds.distribution.version>
 
     <commons-collections4.version>4.4</commons-collections4.version>
     <rome.version>1.18.0</rome.version>
