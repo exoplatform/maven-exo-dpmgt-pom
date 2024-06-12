@@ -31,7 +31,7 @@
 
     <commons-collections4.version>4.4</commons-collections4.version>
     <rome.version>1.18.0</rome.version>
-    <javax.jcr.version>1.0</javax.jcr.version>
+    <javax.jcr.version>2.0</javax.jcr.version>
     <javax.rmi.version>1.0.6.Final</javax.rmi.version>
     <org.apache.jackrabbit.version>1.6.5</org.apache.jackrabbit.version>
     <org.apache.lucene.version>3.6.2</org.apache.lucene.version>
