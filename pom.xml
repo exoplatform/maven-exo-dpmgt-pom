@@ -33,7 +33,7 @@
     <rome.version>1.18.0</rome.version>
     <javax.jcr.version>1.0</javax.jcr.version>
     <javax.rmi.version>1.0.6.Final</javax.rmi.version>
-    <org.apache.jackrabbit.version>1.6.5</org.apache.jackrabbit.version>
+    <org.apache.jackrabbit.version>2.21.25</org.apache.jackrabbit.version>
     <org.apache.lucene.version>3.6.2</org.apache.lucene.version>
     <org.apache.pdfbox.version>2.0.24</org.apache.pdfbox.version>
     <org.apache.poi.version>5.2.2</org.apache.poi.version>
