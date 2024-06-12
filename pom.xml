@@ -47,7 +47,7 @@
     <version.org.antlr>3.5.2</version.org.antlr>
     <com.ibm.icu.version>74.2</com.ibm.icu.version>
     <commons-lang.version>2.6</commons-lang.version>
-    <org.apache.httpcomponents.httpclient.version>4.5.13</org.apache.httpcomponents.httpclient.version>
+    <org.apache.httpcomponents.httpclient.version>4.5.14</org.apache.httpcomponents.httpclient.version>
   </properties>
   <dependencyManagement>
     <dependencies>
