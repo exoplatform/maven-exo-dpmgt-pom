@@ -48,6 +48,12 @@
     <com.ibm.icu.version>74.2</com.ibm.icu.version>
     <commons-lang.version>2.6</commons-lang.version>
     <org.apache.httpcomponents.httpclient.version>4.5.13</org.apache.httpcomponents.httpclient.version>
+    <org.infinispan.version>8.2.6.Final</org.infinispan.version>
+    <!-- Override dependency inherited from infinispan to make the cluster works on JDK 11 -->
+    <org.jboss.marshalling.version>2.0.10.Final</org.jboss.marshalling.version>
+    <org.jboss.jbossts.version>4.16.6.Final</org.jboss.jbossts.version>
+    <org.jboss.jboss-logging.version>3.3.0.Final</org.jboss.jboss-logging.version>
+    <org.jboss.dmr.version>1.1.1.Final</org.jboss.dmr.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -189,9 +195,46 @@
         <version>${org.icepdf.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-core</artifactId>
+        <version>${org.infinispan.version}</version>
+        <exclusions>
+          <exclusion>
+            <artifactId>jboss-transaction-api_1.1_spec</artifactId>
+            <groupId>org.jboss.spec.javax.transaction</groupId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-cachestore-jdbc</artifactId>
+        <version>${org.infinispan.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-commons</artifactId>
+        <version>${org.infinispan.version}</version>
+      </dependency>
+      <!-- Override dependency inherited from infinispan to make the cluster works on JDK 11 -->
+      <dependency>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-common-core</artifactId>
         <version>${org.jboss.jboss-commons.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.marshalling</groupId>
+        <artifactId>jboss-marshalling-osgi</artifactId>
+        <version>${org.jboss.marshalling.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.logging</groupId>
+        <artifactId>jboss-logging</artifactId>
+        <version>${org.jboss.jboss-logging.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.jbossts</groupId>
+        <artifactId>jbossjta</artifactId>
+        <version>${org.jboss.jbossts.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.spec.javax.rmi</groupId>
