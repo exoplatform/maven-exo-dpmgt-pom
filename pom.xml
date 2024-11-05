@@ -8,7 +8,7 @@
     <relativePath />
   </parent>
   <artifactId>maven-exo-depmgt-pom</artifactId>
-  <version>23.x-SNAPSHOT</version>
+  <version>23.x-meeds-qaui-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>eXo PLF:: eXo Platform Dependency Management POM</name>
   <description>Provides version of third parties artifacts to use in eXo platform projects</description>
