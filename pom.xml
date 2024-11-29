@@ -36,7 +36,7 @@
     <org.apache.jackrabbit.version>1.6.5</org.apache.jackrabbit.version>
     <org.apache.lucene.version>3.6.2</org.apache.lucene.version>
     <org.apache.pdfbox.version>2.0.24</org.apache.pdfbox.version>
-    <org.apache.poi.version>5.2.2</org.apache.poi.version>
+    <org.apache.poi.version>5.3.0</org.apache.poi.version>
     <org.apache.tika.version>1.28.4</org.apache.tika.version>
     <org.apache.ws.commons.version>1.0.1</org.apache.ws.commons.version>
     <org.icepdf.version>5.1.1</org.icepdf.version>
